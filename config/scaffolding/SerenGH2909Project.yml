@@ -8,10 +8,58 @@ packages:
   gitUsername: ArtiKhareNew
   gitBranch: main
 - name: XMLBuiltInServices
+  version: "1.0"
   gitServerName: src_shared_GithubCtrl_Arti_1
   gitUrl: https://github.com/ArtiKhareNew
   gitUsername: ArtiKhareNew
   gitBranch: main
+services:
+- serviceName: project.serengh2909.integrations:aa
+  packages:
+  - name: SerenGH2909Project
+    version: "1.0"
+  - name: XMLBuiltInServices
+    version: "1.0"
+- serviceName: XMLBuiltInServices:xmlFlexCascade
+  packages:
+  - name: XMLBuiltInServices
+    version: "1.0"
+- serviceName: pub.xml:xmlStringToXMLNode
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1211
+- serviceName: pub.xml:getXMLNodeType
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1211
+- serviceName: pub.xml:getXMLNodeIterator
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1211
+- serviceName: pub.xml:getNextXMLNode
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1211
+- serviceName: pub.xml:freeXMLNode
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1211
+- serviceName: pub.xml:xmlStringToEnhancedXMLNode
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1211
+- serviceName: pub.xml:queryXMLNode
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1211
+- serviceName: pub.xml:xmlNodeToDocument
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1211
+- serviceName: pub.xml:documentToXMLString
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1211
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false
